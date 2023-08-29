@@ -15,6 +15,7 @@ class TestToStr(unittest.TestCase):
     Return: ok
     """
     def test_to_str(self) -> None:
+        """ test to_str function"""
         self.assertEqual(to_str(1.2), "1.2")
         self.assertEqual(to_str(2.8), "2.8")
         self.assertEqual(to_str(3.0), "3.0")

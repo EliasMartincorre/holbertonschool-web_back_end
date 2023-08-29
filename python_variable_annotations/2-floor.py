@@ -9,7 +9,9 @@ def floor(n: float) -> int:
 
 
 class TestFloor(unittest.TestCase):
+    """ test floor function"""
     def test_floor(self) -> None:
+        """ test floor function"""
         self.assertEqual(floor(1.2), 1)
         self.assertEqual(floor(2.8), 2)
         self.assertEqual(floor(3.0), 3)

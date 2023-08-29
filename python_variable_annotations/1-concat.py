@@ -14,8 +14,9 @@ def concat(str1: str, str2: str) -> str:
 
 
 class TestConcat(unittest.TestCase):
-    " testconcat "
+    " test concat"
     def test_concat(self) -> None:
+        """ test concat function"""
         self.assertEqual(concat("Hello ", "World"), "Hello World")
         self.assertEqual(concat("Hello ", ""), "Hello ")
         self.assertEqual(concat("", "World"), "World")
@@ -27,4 +28,5 @@ class TestConcat(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    """ only if main"""
     unittest.main()
