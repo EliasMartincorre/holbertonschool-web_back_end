@@ -4,11 +4,11 @@ a list input_list of floats as argument
 and returns their sum as a float."""
 
 import unittest
+from typing import List
 
-
-def sum_list(input_list: list[float]) -> float:
+def sum_list(input_list: List[float]) -> float:
     """  sum list of float """
-    total = 0
+    total = 0.0
     for n in input_list:
         total += n
     return total
