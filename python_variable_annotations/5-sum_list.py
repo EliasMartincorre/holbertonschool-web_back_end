@@ -6,6 +6,7 @@ and returns their sum as a float."""
 import unittest
 from typing import List
 
+
 def sum_list(input_list: List[float]) -> float:
     """  sum list of float """
     total = 0.0
@@ -17,6 +18,7 @@ def sum_list(input_list: List[float]) -> float:
 class TestSumList(unittest.TestCase):
     """ test sum_list function"""
     def test_sum(self):
+        """ test sum_list function"""
         self.assertEqual(sum_list([1.2, 2.3, 3.4]), 6.9)
         self.assertEqual(sum_list([-1.2, -2.3, -3.4]), -6.9)
         self.assertEqual(sum_list([1.2, -2.3, 3.4]), 2.3)
@@ -27,4 +29,5 @@ class TestSumList(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    """ only if main"""
     unittest.main()
