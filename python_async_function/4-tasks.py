@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """This module contains the function for task 4"""
 import asyncio
+from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def task_wait_n(n: int = 0, max_delay: int = 10) -> float:
+async def task_wait_n(n: int = 0, max_delay: int = 10) -> List[float]:
     """  Basic Async Syntax """
     tasks = []
     delays = []
