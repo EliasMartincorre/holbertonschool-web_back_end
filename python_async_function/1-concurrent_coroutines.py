@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """  Basic Async Syntax """
 import asyncio
+from typing import List 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
 async def wait_n(n: int = 0, max_delay: int = 10) -> float:
     """  Basic Async Syntax """
-    tasks = []
-    delays = []
+    tasks: List = []
+    delays: List = []
     for i in range(n):
         tasks.append(wait_random(max_delay))
     for task in asyncio.as_completed(tasks):
