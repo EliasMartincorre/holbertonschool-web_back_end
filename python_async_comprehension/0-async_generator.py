@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""  coroutine called async_generator 
+"""  coroutine called async_generator
 that takes no arguments.
 The coroutine will loop 10 times,
 each time asynchronously wait 1 second,
@@ -8,9 +8,9 @@ between 0 and 10. Use the random module."""
 import asyncio
 import random
 
-async def async_generator():
-    """  coroutine called async_generator""" 
-   
+
+async def async_generator() -> float:
+    """  coroutine called async_generator"""
     for i in range(10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
