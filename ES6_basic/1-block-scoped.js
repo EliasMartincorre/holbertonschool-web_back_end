@@ -4,17 +4,16 @@ inside the function taskBlock so that the
 variables aren’t overwritten inside the
 conditional block */
 
-export default function taskBlock(trueOrFalse) {
-  const task = false;
-  const task2 = true;
+export default function taskBlock (trueOrFalse) {
+  const task = false
+  const task2 = true
 
-  
   if (trueOrFalse) {
     // eslint-disable-next-line no-unused-vars
-    const task = true;
+    const task = true
     // eslint-disable-next-line no-unused-vars
-    const task2 = false;
+    const task2 = false
   }
 
-  return [task, task2];
+  return [task, task2]
 }
