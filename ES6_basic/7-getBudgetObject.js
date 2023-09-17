@@ -1,9 +1,9 @@
 /* Modify the following function’s budget object to simply use the keyname instead. */
 export default function getBudgetObject(income, gdp, capita) {
-  const budget ={
+  const budget = {
     income,
     gdp,
     capita,
-  }
-  return budget;
+  };
+  return budget
 };
